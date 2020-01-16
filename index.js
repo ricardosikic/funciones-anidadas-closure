@@ -13,13 +13,13 @@ console.log('valor :', val); //18
 // variables o argumentos de la funcion padre que la contiene.
 
 
-/* function padre(y) {
+function padre(y) {
   function closure(h) {
     return h;
   }
   closure(y);
 }
- */
+ 
 
 
 triangulo = (a, b) => {
@@ -31,3 +31,16 @@ triangulo = (a, b) => {
 
 let val = triangulo(2, 2);
 console.log(val);
+
+
+pizza = (c, b) => {
+  preparacion = (p,a) => {
+    console.log(`la preparacion tiene ${p} ${a}`)
+  }
+  
+ preparacion(c, b);
+
+}
+
+let valor = pizza('pepperoni', 'aceitunas');
+console.log(valor);
